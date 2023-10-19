@@ -1,0 +1,108 @@
+\documentclass[10pt]{article}
+\usepackage[letterpaper,tmargin=1in,rmargin=1in,bmargin=1in,lmargin=1in]%
+           {geometry}
+\usepackage[utf8]{inputenc} % Not sure what this does
+\usepackage{url}
+\usepackage{hyperref}
+\hypersetup{
+  bookmarksnumbered = true,
+  bookmarksopen=false,
+  pdfborder=0 0 0,   % make all links invisible
+                     %   so the pdf looks good when printed
+  pdffitwindow=true, % window fit to page when opened
+  pdfnewwindow=true, % links in new window
+  colorlinks=true,   % false: boxed links; true: colored links
+  linkcolor=blue,    % color of internal links
+  citecolor=magenta, % color of links to bibliography
+  filecolor=magenta, % color of file links
+  urlcolor=blue     % color of external links
+}
+
+\begin{document}
+
+\flushleft
+
+{\large \textbf{Samuel John Dunham}}
+\vspace{1em}
+
+Email: \href{mailto:samuel.j.dunham@vanderbilt.edu}%
+                   {samuel.j.dunham@vanderbilt.edu}
+\vspace{0.5em}
+
+Personal Website: \url{https://www.samueljdunham.com}
+\vspace{0.5em}
+
+GitHub: \url{https://www.github.com/dunhamsj}
+
+\vspace{1em}
+
+% Education
+\textbf{Education}\vspace{0.5em}\hrule\vspace{1em}
+
+\textbf{Vanderbilt University}, Nashville TN\newline
+\textit{Ph.D. Astronomy \& Astrophysics}, May 2024 (expected)
+\vspace{1em}
+
+% Work Experience
+\textbf{Work Experience}\vspace{0.5em}\hrule\vspace{1em}
+
+\textbf{Vanderbilt University}, Nashville TN\newline
+\textit{Research Assistant}, 08/2016 - Present
+\begin{itemize}\setlength\itemsep{0.1cm}
+  \item
+    Writing, implementing, and testing
+    Fortran90 code to solve general relativistic hydrodynamics
+    equations with high-order discontinuous Galerkin methods
+    in \href{https://www.github.com/endeve/thornado}{\texttt{thornado}}
+    for execution on exascale supercomputers
+  \item
+    Porting code to run on GPUs via OpenACC and OpenMP Offloading
+  \item
+    Coupling code to \href{https://www.github.com/AMReX-Codes/amrex}{AMReX}
+    for MPI parallelism and block-structured adaptive mesh refinement
+\end{itemize}
+\vspace{1em}
+
+\textbf{University of Michigan}, Ann Arbor MI\newline
+\textit{Research Assistant}, 06/2014 - 05/2016
+\begin{itemize}\setlength\itemsep{0.1cm}
+  \item
+    Analyzed Hubble Space Telescope data using \texttt{SAOImageDS9}
+    for multiple images of
+    background sources due to strong gravitational lensing by galaxy clusters
+  \item
+    Using \texttt{LENSTOOL},
+    found robust lens models for several galaxy clusters,
+    from which was deduced the mass of the cluster core,
+    the total magnification provided by the cluster,
+    the location of the source, and its morphology
+  \item
+    One of these models led to a publication in the Astrophysical Journal:
+    Samuel J. Dunham \textit{et al} 2019 \textit{ApJ} \textbf{875} 18
+    (\url{https://iopscience.iop.org/article/10.3847/1538-4357/ab0d7d})
+\end{itemize}
+\vspace{1em}
+
+% Skills
+\textbf{Skills}\vspace{0.5em}\hrule
+
+\begin{itemize}\setlength\itemsep{0.1cm}
+  \item
+    Complex problem solving
+  \item
+    Interpersonal communication
+  \item
+    Proficient in Bash, Python, and Fortran90
+  \item
+    Familiar with Julia and C++
+  \item
+    Debugging code
+  \item
+    Submitting and monitoring jobs
+    on leadership-class supercomputers using tools like \texttt{Slurm}
+    and \texttt{PBS}
+  \item
+    Optimizing software for GPUs via OpenACC and OpenMP offloading
+\end{itemize}
+
+\end{document}
